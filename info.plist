@@ -4,10 +4,19 @@
 <dict>
 	<key>bundleid</key>
 	<string></string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>1DDFB5A6-0BDD-489A-B8F8-6DE709C0C5DB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1DCCAC60-DF30-4F1F-A888-CEF612BBF13C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>4DD00EB7-7056-43ED-9723-FB262EF0FEDD</key>
 		<array>
 			<dict>
@@ -67,7 +76,7 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>ruby springest.rb "{query}"</string>
+				<string>ruby providers.rb "{query}"</string>
 				<key>subtext</key>
 				<string>Start typing the name of the provider you're looking for</string>
 				<key>title</key>
@@ -84,11 +93,75 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>subject</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>ruby subjects.rb "{query}"</string>
+				<key>subtext</key>
+				<string>Start typing the name of the subject you're looking for</string>
+				<key>title</key>
+				<string>Springest Subject Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1DDFB5A6-0BDD-489A-B8F8-6DE709C0C5DB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>https://www.springest.nl/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1DCCAC60-DF30-4F1F-A888-CEF612BBF13C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1DCCAC60-DF30-4F1F-A888-CEF612BBF13C</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>1DDFB5A6-0BDD-489A-B8F8-6DE709C0C5DB</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 		<key>204B6555-9CBD-499B-B0B2-A5780EE5C366</key>
 		<dict>
 			<key>ypos</key>

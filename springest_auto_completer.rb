@@ -9,6 +9,10 @@ class SpringestAutoCompleter
     json['results']['institutes']
   end
 
+  def subjects
+    json['results']['subjects']
+  end
+
   protected
 
   def uri
